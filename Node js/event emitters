@@ -6,3 +6,5 @@ customEmitter.on('response',(Hello) => {
     console.log("Data received here " + Hello)
 })
 customEmitter.emit('response',"junk")
+
+//http server is also an built-in event emitter
