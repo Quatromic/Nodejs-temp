@@ -1,0 +1,1 @@
+This is very cool of node.js: this is the first text file inside this sub folder.

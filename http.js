@@ -2,6 +2,7 @@ const http = require('http')
 //request,response
 const server = http.createServer((req,res) => {
     if(req.url === '/'){
+        console.log("Hello World")
         res.end('Welcome to our home page')
     }
     if(req.url === '/about'){
@@ -14,4 +15,6 @@ const server = http.createServer((req,res) => {
     `)
 })
 
-server.listen(2000)
+server.listen(2000,() => {
+    console.log("Server is listening at port 2000")
+})

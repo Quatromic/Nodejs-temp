@@ -1,0 +1,8 @@
+const EventEmitter = require('events')
+
+const customEmitter = new EventEmitter()
+//on and emit
+customEmitter.on('response',(Hello) => {
+    console.log("Data received here " + Hello)
+})
+customEmitter.emit('response',"junk")
