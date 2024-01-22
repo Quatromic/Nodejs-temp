@@ -7,6 +7,7 @@ const stream = createReadStream('./content/sub-content/fourth.txt',{highWaterMar
 stream.on('data',(result) => {
     console.log(result)
 })
+
 stream.on('error',(result) => {
     console.log(result)
 })

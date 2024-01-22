@@ -15,6 +15,16 @@ const server = http.createServer((req,res) => {
     `)
 })
 
-server.listen(2000,() => {
+server.listen(6050,() => {
     console.log("Server is listening at port 2000")
+})
+
+const server2 = http.createServer((request,response) => {
+    if(request.url === '/'){
+        response.write("Hello World")
+        response.end("This server ends here")
+    }
+    else{
+        response.end("Wrong url bro")
+    }
 })
